@@ -1,0 +1,23 @@
+.form{
+    display: flex;
+    padding: 0;
+    margin: 0;
+   
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    background: rgb(170, 226, 223);
+    color: rgb(65, 118, 233);
+    width: 400px;
+   }
+   label{
+    width: 150px;
+    display: inline-block;
+   }
+
+   body{
+    background-image: url(images/abstract-cube-motif-vector-seamless-pattern-design-awesome-classic-product-design-fabric-backgrounds-invitations-packaging-design-projects-surface-pattern-design_562551-96.avif);
+    
+   }
+
+  

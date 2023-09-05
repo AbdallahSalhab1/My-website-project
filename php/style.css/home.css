@@ -1,0 +1,124 @@
+.container{
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 0.5fr 3.5fr;
+    grid-template-rows: 0.4fr 0.1fr 2.4fr;
+    grid-template-areas: 
+    "header header"
+    "nav nav"
+    "something main";
+    grid-gap:0.2rem;
+    font-family: "inter", sans-serif;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 15px;
+    text-align: center;
+}
+
+
+    body{
+        margin: 0; 
+        padding: 0;
+        background: #55fcf3;
+    }
+
+
+    header{
+        display:block;
+        background-color: rgb(165, 217, 241);
+        padding: 0;
+margin: 0;
+grid-area: header;
+}
+
+.navbar  ul{
+    list-style: none;
+    
+    margin: 0;
+    padding: 0;
+}
+
+  nav{
+grid-area: nav;
+display: flex;
+padding: 20px 0;
+justify-content: space-around;
+align-items: center;
+flex-wrap: wrap;
+}
+
+.navbar a{
+   text-decoration:none;
+    color:blanchedalmond;
+    width:200px;
+    display: inline-block;
+    background: rgb(0, 225, 255);
+    text-align: center;
+    
+}
+
+
+
+.navbar li{
+    display:inline-block;
+    
+}
+
+
+
+  main{
+    background: rgb(198, 235, 238);
+    grid-area: main;
+}
+
+#something{
+    grid-area: something;
+    
+}
+
+
+ 
+
+@media only screen and (max-width:550px){
+    .container{
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.4fr 0.4fr 2fr 1.2fr 0.4fr;
+        grid-template-areas: 
+        "header"
+        "nav"
+        "main"
+        "something"
+        "footer";
+    }
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family:'Times New Roman', Times, serif;
+}
+ body{
+       background-image: url(images/abstract-cube-motif-vector-seamless-pattern-design-awesome-classic-product-design-fabric-backgrounds-invitations-packaging-design-projects-surface-pattern-design_562551-96.avif);
+       
+      }
+
+      #something{
+        background-image: url(images/photo-1561101904-da649fcbf03f.jfif); 
+        background-size: cover;
+        background-repeat: no-repeat;
+        
+      }
+      main{
+        background-image: url(images/american-airlines-airplane-taking-off.jpg); 
+        background-size:cover;
+        background-repeat: no-repeat;
+      text-align: left;
+      
+      }
+      .img{
+        position: fixed;
+        height: 75px;
+        left: 0px;
+        width:75px;
+      }
